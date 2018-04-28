@@ -285,7 +285,7 @@ body {
   cursor: pointer;
   white-space: nowrap;
   transition: background-color 0.3s; }
-  .b_download_app .button:nth-child(3) {
+  .b_download_app .button:nth-child(3), .b_download_app .button:nth-child(5) {
     margin-right: 0 !important; }
   .b_download_app .button:hover {
     background: rgba(0, 151, 252, 0.028); }

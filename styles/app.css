@@ -7,7 +7,8 @@
   list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-size-adjust: none;
+  -ms-text-size-adjust: none;
+      text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: transparent; }
   *:after, *:before {
@@ -63,8 +64,7 @@ table {
 
 body {
   font-size: 0;
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   text-align: left; }
 
 .icon_hidden {
@@ -91,14 +91,6 @@ body {
   text-align: left;
   vertical-align: middle; }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -118,8 +110,7 @@ body {
   background: url("../img/fortify_bitmap.png") no-repeat, linear-gradient(to bottom, #3D4346 5%, #282E32 95%);
   background-size: cover;
   background-blend-mode: overlay;
-  -webkit-animation: fadeIn 10s 0s linear infinite forwards;
-          animation: fadeIn 10s 0s linear infinite forwards; }
+  animation: fadeIn 10s 0s linear infinite forwards; }
 
 .l_section {
   width: 100%;
@@ -391,8 +382,7 @@ body {
       .b_questions .toggle_button:hover .toggle_arrow {
         fill: rgba(0, 151, 252, 0.7); }
     .b_questions .toggle_button.m_hide .toggle_arrow {
-      -webkit-transform: scaleY(-1) translateY(2px);
-              transform: scaleY(-1) translateY(2px); }
+      transform: scaleY(-1) translateY(2px); }
   .b_questions .toggle_arrow {
     transition: fill 0.3s;
     vertical-align: middle;
@@ -462,8 +452,7 @@ body {
   top: 0;
   left: 50%;
   max-width: 1040px;
-  -webkit-transform: translate(-50%, -60%);
-          transform: translate(-50%, -60%); }
+  transform: translate(-50%, -60%); }
   .b_slider .pagination {
     margin-top: 31px;
     height: 10px;

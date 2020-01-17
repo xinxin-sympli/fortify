@@ -40,13 +40,11 @@ html, body {
 
 html.not_selectable_text * {
   -webkit-user-select: none !important;
-  -moz-user-select: none !important;
   -ms-user-select: none !important;
   user-select: none !important; }
 
 body.not_selectable_text * {
   -webkit-user-select: none !important;
-  -moz-user-select: none !important;
   -ms-user-select: none !important;
   user-select: none !important; }
 
@@ -133,7 +131,6 @@ body {
 
 .b_header * {
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
 
@@ -202,7 +199,6 @@ body {
     margin-top: 18px; }
   .b_main .btn_download {
     -webkit-user-select: none;
-    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     display: inline-block;
@@ -262,7 +258,6 @@ body {
 .b_download_app .button {
   text-align: left;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: calc(50% - 10px);
@@ -414,7 +409,6 @@ body {
 
 .b_footer .nav_item {
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   letter-spacing: 0.29px;

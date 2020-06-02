@@ -1,10 +1,28 @@
-import initSlider from './slider';
-
 const FORTIFY_POOLING_DELAY = 5000;
 const downloadForMac = document.getElementById(`download_mac`);
 const downloadForWin32 = document.getElementById(`download_86`);
 const downloadForWin64 = document.getElementById(`download_64`);
 const downloadForLinux64 = document.getElementById(`download_linux_64`);
+
+function initSlider() {
+  const swiper = new Swiper('.b_slider', {
+    pagination: '.pagination',
+    paginationClickable: true,
+    autoplay: 2000,
+    autoHeight: true,
+    effect: 'fade',
+    loop: true,
+    speed: 300,
+  });
+
+  const sliderContainer = document.getElementsByClassName('swiper-wrapper')[0];
+
+  if (sliderContainer) {
+    sliderContainer.addEventListener('click', () => swiper.slideNext(), true);
+  }
+
+  return swiper;
+}
 
 function createElement(tag = 'div', className = '', id, content = '', options = {}) {
   const element = document.createElement(tag);

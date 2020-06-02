@@ -1,37 +1,17 @@
 {
   "name": "fortify-landing",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Fortify enables web applications to use smart cards, local certificate stores and do certificate enrollment.",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist",
-    "deploy": "gh-pages -d dist",
-    "start": "npm run clean && parcel src/index.html --port 3000",
-    "build": "npm run clean && parcel build src/index.html"
+    "build:css": "sass src/styles/app.sass:src/styles/app.css --no-source-map",
+    "predeploy:gh-pages": "npm run build:css",
+    "deploy:gh-pages": "gh-pages -d src"
   },
   "author": "https://github.com/PeculiarVentures",
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^2.2.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.2.2",
-    "rimraf": "^3.0.0",
     "sass": "^1.25.0"
-  },
-  "staticFiles": {
-    "staticPath": [
-      {
-        "staticPath": "src/static",
-        "staticOutDir": "/"
-      },
-      {
-        "staticPath": "src/media",
-        "staticOutDir": "/media"
-      },
-      {
-        "staticPath": "src/img",
-        "staticOutDir": "/img"
-      }
-    ]
   }
 }

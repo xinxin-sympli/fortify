@@ -39,14 +39,14 @@ input, textarea
   -moz-appearance: none
   -ms-appearance: none
   appearance: none !important
-  font-family: "Open Sans", Arial, sans-serif !important
+  font-family: inherit
 
 input:focus, textarea:focus
   outline: none
 
 html, body
   width: 100%
-  font-family: "Helvetica", Arial, sans-serif
+  font-family: "Open Sans", Arial, sans-serif
   min-width: 320px
   overflow-x: hidden
 
@@ -69,12 +69,11 @@ table
 
 
 @font-face
-  font-family: 'OpenSans'
-  src: url('../media/fonts/OpenSans/opensans-regular-webfont.eot')
-  src: url('../media/fonts/OpenSans/opensans-regular-webfont.woff') format('woff')
-  src: url('../media/fonts/OpenSans/opensans-regular-webfont.ttf') format('truetype')
+  font-family: 'Open Sans'
+  src: url('/media/fonts/OpenSans/opensans-regular-webfont.woff') format('woff')
   font-weight: normal
   font-style: normal
+  font-display: swap
 
 body
   font-size: 0
@@ -122,7 +121,7 @@ body
   left: 0
   z-index: 0
   opacity: 0
-  background: url('../img/fortify_bitmap.png') no-repeat, linear-gradient(to bottom, #3D4346 5%, #282E32 95%)
+  background: url('/img/fortify_bitmap.png') no-repeat, linear-gradient(to bottom, #3D4346 5%, #282E32 95%)
   background-size: cover
   background-blend-mode: overlay
   animation: fadeIn 10s 0s linear infinite forwards
@@ -415,7 +414,7 @@ body
     position: absolute
     width: 55px
     height: 77px
-    background: url('../img/open_source_badge.png') no-repeat, $c_mako
+    background: url('/img/open_source_badge.png') no-repeat, $c_mako
     background-size: contain
     right: 0
     top: 0
@@ -423,7 +422,7 @@ body
     position: absolute
     width: 38px
     height: 54px
-    background: url('../img/lock.png') no-repeat, $c_mako
+    background: url('/img/lock.png') no-repeat, $c_mako
     background-size: contain
     right: 75px
     top: 5px

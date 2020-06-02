@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        Fortify - Enabling cross-browser usage of local certificates and smart cards
+        Fortify
     </title>
+    <meta name="description" content="Fortify enables web applications to use smart cards, local certificate stores and do certificate enrollment.">
     <meta name="keywords" content="x509, smartcard, pkcs11, cryptography, cryptoapi, keychain, minidriver, webcrypto"> 
 
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -724,16 +725,25 @@
     </svg>
 </div>
 
-<script defer nomodule src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
-<script defer nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<!-- Babel Polyfill -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.8.7/polyfill.min.js"></script>
+
+<!-- Fetch Polyfill -->
+<script defer nomodule src="https://unpkg.com/whatwg-fetch@3.0.0/dist/fetch.umd.js"></script>
+
+<!-- Website scripts -->
 <script defer src="/js/swiper.custom.min.js"></script>
-<script defer src="/js/app.es2015.js"></script>
+<script defer nomodule src="/js/app.es2015.js"></script>
+<script defer type="module" src="/js/app.js"></script>
+
+<!-- Google analitics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109693148-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-109693148-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-109693148-1');
 </script>
+
 </body>
 </html>
